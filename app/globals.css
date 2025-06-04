@@ -1,0 +1,224 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 10 10 10;
+    --foreground: 248 248 255;
+    --card: 26 26 26;
+    --card-foreground: 248 248 255;
+    --popover: 26 26 26;
+    --popover-foreground: 248 248 255;
+    --primary: 220 20 60;
+    --primary-foreground: 248 248 255;
+    --secondary: 48 25 52;
+    --secondary-foreground: 248 248 255;
+    --muted: 26 26 26;
+    --muted-foreground: 156 163 175;
+    --accent: 25 25 112;
+    --accent-foreground: 248 248 255;
+    --destructive: 239 68 68;
+    --destructive-foreground: 248 248 255;
+    --border: 39 39 42;
+    --input: 39 39 42;
+    --ring: 220 20 60;
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-dark-void text-ghost-white font-sans;
+    background-image: radial-gradient(circle at 20% 80%, rgba(220, 20, 60, 0.1) 0%, transparent 50%),
+      radial-gradient(circle at 80% 20%, rgba(48, 25, 52, 0.1) 0%, transparent 50%);
+  }
+}
+
+/* Custom Scrollbar Styling - Horror Theme */
+@layer base {
+  /* Webkit browsers (Chrome, Safari, Edge) */
+  ::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: linear-gradient(180deg, rgba(10, 10, 10, 0.8) 0%, rgba(26, 26, 26, 0.9) 100%);
+    border-radius: 6px;
+    border: 1px solid rgba(220, 20, 60, 0.1);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, rgba(220, 20, 60, 0.8) 0%, rgba(139, 0, 0, 0.9) 50%, rgba(48, 25, 52, 0.8) 100%);
+    border-radius: 6px;
+    border: 1px solid rgba(220, 20, 60, 0.2);
+    box-shadow: 0 0 8px rgba(220, 20, 60, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, rgba(220, 20, 60, 1) 0%, rgba(139, 0, 0, 1) 50%, rgba(48, 25, 52, 1) 100%);
+    box-shadow: 0 0 12px rgba(220, 20, 60, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+    transform: scale(1.05);
+  }
+
+  ::-webkit-scrollbar-thumb:active {
+    background: linear-gradient(180deg, rgba(139, 0, 0, 1) 0%, rgba(220, 20, 60, 1) 50%, rgba(48, 25, 52, 1) 100%);
+    box-shadow: 0 0 16px rgba(220, 20, 60, 0.7), inset 0 2px 4px rgba(0, 0, 0, 0.3);
+  }
+
+  ::-webkit-scrollbar-corner {
+    background: rgba(10, 10, 10, 0.9);
+    border: 1px solid rgba(220, 20, 60, 0.1);
+  }
+
+  /* Custom scrollbar for modal content */
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+    border: 1px solid rgba(220, 20, 60, 0.1);
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, rgba(220, 20, 60, 0.6) 0%, rgba(48, 25, 52, 0.8) 100%);
+    border-radius: 4px;
+    border: 1px solid rgba(220, 20, 60, 0.2);
+    box-shadow: 0 0 6px rgba(220, 20, 60, 0.3);
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, rgba(220, 20, 60, 0.8) 0%, rgba(48, 25, 52, 1) 100%);
+    box-shadow: 0 0 10px rgba(220, 20, 60, 0.5);
+  }
+
+  /* Firefox scrollbar styling */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(220, 20, 60, 0.8) rgba(26, 26, 26, 0.9);
+  }
+
+  /* Thin scrollbar for modal */
+  .custom-scrollbar {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(220, 20, 60, 0.6) rgba(0, 0, 0, 0.3);
+  }
+
+  /* Enhanced scrollbar animations */
+  @keyframes scrollbar-glow {
+    0%,
+    100% {
+      box-shadow: 0 0 8px rgba(220, 20, 60, 0.3);
+    }
+    50% {
+      box-shadow: 0 0 16px rgba(220, 20, 60, 0.6);
+    }
+  }
+
+  /* Scrollbar with subtle glow animation */
+  ::-webkit-scrollbar-thumb {
+    animation: scrollbar-glow 4s ease-in-out infinite;
+  }
+
+  /* Hide scrollbar on very small screens but keep functionality */
+  @media (max-width: 640px) {
+    ::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    .custom-scrollbar::-webkit-scrollbar {
+      width: 4px;
+    }
+  }
+}
+
+@layer components {
+  .glass-effect {
+    @apply backdrop-blur-md bg-black/20 border border-white/10;
+  }
+
+  .text-gradient {
+    @apply bg-gradient-to-r from-crimson to-deep-purple bg-clip-text text-transparent;
+  }
+
+  .horror-shadow {
+    box-shadow: 0 10px 30px rgba(220, 20, 60, 0.3);
+  }
+
+  /* Enhanced prose styling for news articles */
+  .prose-crimson {
+    --tw-prose-body: rgb(209 213 219);
+    --tw-prose-headings: rgb(248 248 255);
+    --tw-prose-lead: rgb(156 163 175);
+    --tw-prose-links: rgb(220 20 60);
+    --tw-prose-bold: rgb(248 248 255);
+    --tw-prose-counters: rgb(156 163 175);
+    --tw-prose-bullets: rgb(220 20 60);
+    --tw-prose-hr: rgb(75 85 99);
+    --tw-prose-quotes: rgb(248 248 255);
+    --tw-prose-quote-borders: rgb(220 20 60);
+    --tw-prose-captions: rgb(156 163 175);
+    --tw-prose-code: rgb(248 248 255);
+    --tw-prose-pre-code: rgb(209 213 219);
+    --tw-prose-pre-bg: rgb(31 41 55);
+    --tw-prose-th-borders: rgb(75 85 99);
+    --tw-prose-td-borders: rgb(55 65 81);
+  }
+
+  .prose-crimson h3 {
+    @apply text-crimson font-elegant font-bold text-xl lg:text-2xl mb-4 mt-8;
+  }
+
+  .prose-crimson blockquote {
+    @apply border-l-4 border-crimson bg-deep-purple/20 p-4 rounded-r-lg italic font-elegant;
+  }
+
+  .prose-crimson ul {
+    @apply space-y-2;
+  }
+
+  .prose-crimson li {
+    @apply relative pl-6;
+  }
+
+  .prose-crimson li::before {
+    content: "";
+    @apply absolute left-0 top-2 w-2 h-2 bg-crimson rounded-full;
+  }
+
+  .prose-crimson strong {
+    @apply text-crimson font-bold;
+  }
+
+  .prose-crimson p {
+    @apply leading-relaxed mb-4 text-gray-300;
+  }
+}
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.character-gradient-text {
+  background: linear-gradient(90deg, #dc143c, #301934, #dc143c);
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientMove 8s linear infinite;
+}
