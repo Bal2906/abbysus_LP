@@ -102,7 +102,7 @@ export function Footer() {
                     className="absolute inset-0 border border-crimson/30 rounded-lg"
                   />
                 </div>
-                <span className="text-3xl font-elegant font-bold text-gradient">MortiSabbat</span>
+                <span className="text-3xl font-elegant font-bold text-gradient">Ravenshollow</span>
               </div>
 
               <p className="text-gray-400 leading-relaxed max-w-md mb-6">
@@ -203,7 +203,7 @@ export function Footer() {
             <h4 className="text-xl font-bold text-crimson">Advertencia de Contenido</h4>
           </div>
           <p className="text-gray-400 leading-relaxed">
-            MortiSabbat contiene temas de terror psicológico, violencia sugerida y contenido perturbador. Recomendado
+            Ravenshollow contiene temas de terror psicológico, violencia sugerida y contenido perturbador. Recomendado
             para mayores de 17 años. Se recomienda discreción del jugador.
           </p>
         </motion.div>
@@ -218,7 +218,7 @@ export function Footer() {
         >
           <div className="flex flex-col lg:flex-row justify-between items-center space-y-4 lg:space-y-0">
             <div className="flex items-center space-x-4">
-              <p className="text-gray-400 text-sm">© 2024 MortiSabbat Studios. Todos los derechos reservados.</p>
+              <p className="text-gray-400 text-sm">© 2024 Ravenshollow Studios. Todos los derechos reservados.</p>
               <div className="flex items-center space-x-2">
                 <Heart className="h-4 w-4 text-crimson" />
                 <span className="text-gray-500 text-xs">Hecho con terror</span>

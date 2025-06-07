@@ -97,7 +97,7 @@ export function Navbar({ isCharacterPage = false }: NavbarProps) {
               onClick={handleLogoClick}
             >
               <div className="w-8 h-8 bg-gradient-to-br from-crimson to-deep-purple rounded-lg"></div>
-              <span className="text-xl font-elegant font-bold text-crimson">MortiSabbat</span>
+              <span className="text-xl font-elegant font-bold text-crimson">Mortis Sabbat</span>
             </motion.div>
 
             {/* Right Navigation */}
@@ -112,7 +112,12 @@ export function Navbar({ isCharacterPage = false }: NavbarProps) {
                   {item.name}
                 </motion.button>
               ))}
-              <Button className="bg-crimson hover:bg-blood-red text-white font-medium">Jugar Demo</Button>
+              <Button
+                onClick={() => router.push("/demo")}
+                className="bg-crimson hover:bg-blood-red text-white font-medium"
+              >
+                Jugar Demo
+              </Button>
             </div>
 
             {/* Mobile menu button */}
@@ -155,7 +160,7 @@ export function Navbar({ isCharacterPage = false }: NavbarProps) {
               <div className="flex items-center justify-between p-6 border-b border-crimson/30">
                 <div className="flex items-center space-x-2 cursor-pointer" onClick={handleLogoClick}>
                   <div className="w-8 h-8 bg-gradient-to-br from-crimson to-deep-purple rounded-lg"></div>
-                  <span className="text-xl font-elegant font-bold text-crimson">MortiSabbat</span>
+                  <span className="text-xl font-elegant font-bold text-crimson">Mortis Sabbat</span>
                 </div>
                 <Button
                   variant="ghost"
@@ -189,7 +194,13 @@ export function Navbar({ isCharacterPage = false }: NavbarProps) {
                   transition={{ delay: 0.4 }}
                   className="pt-6"
                 >
-                  <Button className="w-full bg-crimson hover:bg-blood-red text-white font-medium horror-shadow">
+                  <Button
+                    onClick={() => {
+                      setIsOpen(false)
+                      router.push("/demo")
+                    }}
+                    className="w-full bg-crimson hover:bg-blood-red text-white font-medium horror-shadow"
+                  >
                     Jugar Demo
                   </Button>
                 </motion.div>

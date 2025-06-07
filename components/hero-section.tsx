@@ -113,7 +113,7 @@ export function HeroSection() {
             className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-elegant font-bold mb-6 sm:mb-8 relative"
           >
             <span className="relative inline-block">
-              <span className="text-crimson">MortiSabbat</span>
+              <span className="text-crimson">Mortis Sabbat</span>
               <motion.div
                 className="absolute inset-0 text-crimson opacity-20"
                 animate={{
@@ -126,7 +126,7 @@ export function HeroSection() {
                   repeatDelay: 5,
                 }}
               >
-                MortiSabbat
+                Mortis Sabbat
               </motion.div>
             </span>
           </motion.h1>
@@ -143,7 +143,7 @@ export function HeroSection() {
             </p>
             <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-400 max-w-4xl mx-auto leading-relaxed px-4">
               Sumérgete en una experiencia de terror psicológico donde la realidad se desvanece y cada decisión puede
-              ser la diferencia entre la cordura y la locura. En MortiSabbat, tus peores pesadillas cobran vida.
+              ser la diferencia entre la cordura y la locura. En Mortis Sabbat, tus peores pesadillas cobran vida.
             </p>
           </motion.div>
 

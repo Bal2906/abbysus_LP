@@ -534,10 +534,10 @@ export default function CharacterPage() {
                                                 className="glass-effect p-4 lg:p-6 rounded-lg border border-crimson/20"
                                             >
                                                 <h4 className="text-base lg:text-lg font-semibold text-crimson mb-2 lg:mb-3">
-                                                    Conexión con MortiSabbat
+                                                    Conexión con Ravenshollow
                                                 </h4>
                                                 <p className="text-gray-300 text-xs lg:text-sm leading-relaxed">
-                                                    {character.detailedInfo.history.connectionToMortiSabbat}
+                                                    {character.detailedInfo.history.connectionToRavenshollow}
                                                 </p>
                                             </motion.div>
                                         </div>
@@ -625,7 +625,7 @@ export default function CharacterPage() {
                                             <p className="text-gray-300 leading-relaxed text-sm lg:text-base mb-4">
                                                 Las relaciones de {character.name} con los demás personajes son fundamentales para el desarrollo
                                                 de la trama. Tus decisiones influirán en cómo evolucionan estas relaciones, pudiendo fortalecer
-                                                alianzas o crear enemistades que cambiarán el curso de tu experiencia en MortiSabbat.
+                                                alianzas o crear enemistades que cambiarán el curso de tu experiencia en Ravenshollow.
                                             </p>
                                             <p className="text-gray-300 leading-relaxed text-sm lg:text-base">
                                                 Recuerda que en este mundo, la confianza es un recurso escaso y valioso. Elige sabiamente en

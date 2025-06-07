@@ -21,7 +21,7 @@ export function PreloaderPage({ onLoadComplete }: PreloaderPageProps) {
     "Analizando tus miedos más profundos...",
     "Preparando laberintos psicológicos...",
     "Desvaneciendo la línea entre realidad y ficción...",
-    "Bienvenido a MortiSabbat...",
+    "Bienvenido a Ravenshollow...",
   ]
 
   // Reducir la cantidad de partículas en móviles
@@ -252,7 +252,7 @@ export function PreloaderPage({ onLoadComplete }: PreloaderPageProps) {
             }}
             className="text-4xl sm:text-5xl md:text-6xl font-elegant font-bold mb-10 text-crimson relative z-10 tracking-wider"
           >
-            MortiSabbat
+            Ravenshollow
           </motion.h1>
 
           {/* Loading Messages con transiciones elegantes */}

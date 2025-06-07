@@ -29,7 +29,7 @@ export const newsItems: NewsItem[] = [
       <h3>El Sistema de Cordura Revolucionario</h3>
       <p>Cada decisión que tomes como Elena Blackwood no solo afectará el curso de la narrativa, sino que alterará fundamentalmente tu percepción de la realidad. El sistema rastrea no solo las grandes decisiones morales, sino también los pequeños momentos de duda, los instantes de vacilación, y las reacciones emocionales del jugador.</p>
 
-      <blockquote>"La mente humana es frágil, y en MortiSabbat, esa fragilidad se convierte en el elemento más poderoso del juego." - Director Creativo</blockquote>
+      <blockquote>"La mente humana es frágil, y en Ravenshollow, esa fragilidad se convierte en el elemento más poderoso del juego." - Director Creativo</blockquote>
 
       <h3>Mecánicas Adaptativas</h3>
       <p>El juego utiliza algoritmos avanzados para detectar patrones en el comportamiento del jugador:</p>
@@ -75,7 +75,7 @@ export const newsItems: NewsItem[] = [
       </ul>
 
       <h3>Instrumentación Única</h3>
-      <p>Para crear los sonidos únicos de MortiSabbat, Yamaoka ha experimentado con instrumentos poco convencionales: cajas de música oxidadas, pianos desafinados, y grabaciones de campo realizadas en ubicaciones abandonadas. Cada elemento sonoro ha sido cuidadosamente seleccionado para evocar una sensación específica de inquietud.</p>
+      <p>Para crear los sonidos únicos de Ravenshollow, Yamaoka ha experimentado con instrumentos poco convencionales: cajas de música oxidadas, pianos desafinados, y grabaciones de campo realizadas en ubicaciones abandonadas. Cada elemento sonoro ha sido cuidadosamente seleccionado para evocar una sensación específica de inquietud.</p>
 
       <h3>Colaboración Creativa</h3>
       <p>El proceso creativo ha sido profundamente colaborativo, con Yamaoka trabajando estrechamente con el equipo narrativo para asegurar que cada pieza musical no solo acompañe la acción, sino que se convierta en parte integral de la experiencia narrativa.</p>
@@ -95,12 +95,12 @@ export const newsItems: NewsItem[] = [
     readTime: 3,
     tags: ["Demo", "Steam", "Lanzamiento"],
     content: `
-      <p>El momento que los fanáticos del terror psicológico han estado esperando finalmente ha llegado. La demo de <strong>Mortis Sabbat</strong> estará disponible durante el próximo Steam Next Fest, ofreciendo a los jugadores una ventana de 30 minutos hacia el mundo aterrador de MortiSabbat.</p>
+      <p>El momento que los fanáticos del terror psicológico han estado esperando finalmente ha llegado. La demo de <strong>Mortis Sabbat</strong> estará disponible durante el próximo Steam Next Fest, ofreciendo a los jugadores una ventana de 30 minutos hacia el mundo aterrador de Ravenshollow.</p>
 
       <h3>¿Qué Incluye la Demo?</h3>
       <p>La demo cuidadosamente diseñada incluye la secuencia de apertura completa del juego, permitiendo a los jugadores experimentar:</p>
       <ul>
-        <li><strong>Llegada a MortiSabbat:</strong> Los primeros momentos inquietantes de Elena en el pueblo</li>
+        <li><strong>Llegada a Ravenshollow:</strong> Los primeros momentos inquietantes de Elena en el pueblo</li>
         <li><strong>Sistema de Cordura:</strong> Una introducción completa a las mecánicas psicológicas</li>
         <li><strong>Primer Encuentro:</strong> Una interacción crucial que establece el tono del juego</li>
         <li><strong>Exploración Inicial:</strong> Descubre los primeros secretos del pueblo maldito</li>

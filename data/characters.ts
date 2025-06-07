@@ -23,7 +23,7 @@ export interface Character {
     history: {
       origins: string
       definingTrauma: string
-      connectionToMortiSabbat: string
+      connectionToRavenshollow: string
       hiddenSecrets: string
     }
     relationships: {
@@ -44,17 +44,17 @@ export const characters: Character[] = [
     imageUrl: "/placeholder.svg?height=400&width=300",
     personality: ["Analítica", "Determinada", "Empática", "Cautelosa"],
     backstory:
-      "Elena perdió a su hermana menor en circunstancias misteriosas hace 10 años. Ahora, como psicóloga forense, usa su experiencia para ayudar a otros, pero cuando llega a MortiSabbat, los recuerdos de su pasado comienzan a atormentarla.",
+      "Elena perdió a su hermana menor en circunstancias misteriosas hace 10 años. Ahora, como psicóloga forense, usa su experiencia para ayudar a otros, pero cuando llega a Ravenshollow, los recuerdos de su pasado comienzan a atormentarla.",
     detailedInfo: {
       overview: {
         generalDescription:
-          "Elena Blackwood es una psicóloga forense reconocida por su capacidad excepcional para desentrañar los misterios más complejos de la mente humana. Su llegada a MortiSabbat no es casualidad: está siguiendo pistas que podrían revelar la verdad sobre la desaparición de su hermana menor hace una década.",
+          "Elena Blackwood es una psicóloga forense reconocida por su capacidad excepcional para desentrañar los misterios más complejos de la mente humana. Su llegada a Ravenshollow no es casualidad: está siguiendo pistas que podrían revelar la verdad sobre la desaparición de su hermana menor hace una década.",
         roleInStory:
-          "Como protagonista, Elena guía al jugador a través del misterio de MortiSabbat. Sus decisiones no solo afectarán el curso de la investigación, sino que determinarán su estabilidad mental y su capacidad para distinguir entre la realidad y las alucinaciones que comienzan a atormentarla.",
+          "Como protagonista, Elena guía al jugador a través del misterio de Ravenshollow. Sus decisiones no solo afectarán el curso de la investigación, sino que determinarán su estabilidad mental y su capacidad para distinguir entre la realidad y las alucinaciones que comienzan a atormentarla.",
         keyCharacteristics: [
           "Capacidad analítica excepcional para resolver casos complejos",
           "Trauma personal que la impulsa a buscar justicia para otros",
-          "Vulnerabilidad psicológica que la hace susceptible a los horrores de MortiSabbat",
+          "Vulnerabilidad psicológica que la hace susceptible a los horrores de Ravenshollow",
           "Determinación inquebrantable que a veces la lleva a tomar riesgos peligrosos",
         ],
       },
@@ -72,11 +72,11 @@ export const characters: Character[] = [
       },
       history: {
         origins:
-          "Antes de los eventos de MortiSabbat, Elena trabajaba como psicóloga forense en casos de alto perfil en la ciudad, ganando reconocimiento por su capacidad para entender la mente criminal. Su reputación se construyó sobre su habilidad para mantener la objetividad profesional incluso en los casos más perturbadores.",
+          "Antes de los eventos de Ravenshollow, Elena trabajaba como psicóloga forense en casos de alto perfil en la ciudad, ganando reconocimiento por su capacidad para entender la mente criminal. Su reputación se construyó sobre su habilidad para mantener la objetividad profesional incluso en los casos más perturbadores.",
         definingTrauma:
           "La desaparición de su hermana menor, Lily, hace 10 años la ha perseguido cada día desde entonces. Lily desapareció sin dejar rastro durante una excursión familiar, y a pesar de una búsqueda exhaustiva, nunca se encontró evidencia de lo que le ocurrió. Este evento transformó a Elena de una joven optimista en una profesional obsesionada con encontrar respuestas.",
-        connectionToMortiSabbat:
-          "Elena descubre que la desaparición de su hermana podría estar conectada con los eventos actuales en MortiSabbat cuando encuentra similitudes inquietantes en los patrones de desaparición. Un testimonio anónimo la lleva a este pueblo remoto, donde espera encontrar finalmente las respuestas que ha buscado durante una década.",
+        connectionToRavenshollow:
+          "Elena descubre que la desaparición de su hermana podría estar conectada con los eventos actuales en Ravenshollow cuando encuentra similitudes inquietantes en los patrones de desaparición. Un testimonio anónimo la lleva a este pueblo remoto, donde espera encontrar finalmente las respuestas que ha buscado durante una década.",
         hiddenSecrets:
           "Elena oculta el hecho de que ha estado experimentando alucinaciones relacionadas con su hermana desde hace años. También mantiene en secreto que ha estado tomando medicación para la ansiedad y que su licencia profesional está bajo revisión debido a su comportamiento errático en casos recientes.",
       },
@@ -89,7 +89,7 @@ export const characters: Character[] = [
         sarah: {
           relationshipType: "Aliada Crucial",
           description:
-            "Una alianza crucial basada en objetivos compartidos. Sarah se convierte en la única persona en quien Elena puede confiar en MortiSabbat, aunque ambas mujeres guardan secretos que podrían cambiar la naturaleza de su amistad.",
+            "Una alianza crucial basada en objetivos compartidos. Sarah se convierte en la única persona en quien Elena puede confiar en Ravenshollow, aunque ambas mujeres guardan secretos que podrían cambiar la naturaleza de su amistad.",
         },
         "dr-hayes": {
           relationshipType: "Mentor Complejo",
@@ -108,15 +108,15 @@ export const characters: Character[] = [
     imageUrl: "/placeholder.svg?height=400&width=300",
     personality: ["Carismático", "Manipulador", "Inteligente", "Peligroso"],
     backstory:
-      "Marcus ha vivido en MortiSabbat toda su vida. Conoce todos los secretos del pueblo y parece estar siempre un paso adelante de Elena. Su sonrisa encantadora oculta intenciones siniestras.",
+      "Marcus ha vivido en Ravenshollow toda su vida. Conoce todos los secretos del pueblo y parece estar siempre un paso adelante de Elena. Su sonrisa encantadora oculta intenciones siniestras.",
     detailedInfo: {
       overview: {
         generalDescription:
-          "Marcus Thorne es una figura enigmática que ha vivido en MortiSabbat durante décadas, convirtiéndose en una especie de historiador no oficial del pueblo. Su conocimiento íntimo de los secretos locales y su capacidad para aparecer en los momentos más inoportunos lo convierten en una presencia constante y perturbadora en la investigación de Elena.",
+          "Marcus Thorne es una figura enigmática que ha vivido en Ravenshollow durante décadas, convirtiéndose en una especie de historiador no oficial del pueblo. Su conocimiento íntimo de los secretos locales y su capacidad para aparecer en los momentos más inoportunos lo convierten en una presencia constante y perturbadora en la investigación de Elena.",
         roleInStory:
           "Como antagonista principal, Marcus representa el principal obstáculo y amenaza para Elena. No es un villano tradicional, sino una fuerza más sutil y psicológicamente compleja que manipula eventos desde las sombras, siempre manteniéndose un paso adelante de quienes intentan desentrañar sus verdaderas intenciones.",
         keyCharacteristics: [
-          "Conocimiento enciclopédico de la historia oculta de MortiSabbat",
+          "Conocimiento enciclopédico de la historia oculta de Ravenshollow",
           "Habilidad sobrenatural para manipular situaciones y personas",
           "Presencia magnética que atrae y repele simultáneamente",
           "Conexión misteriosa con los eventos sobrenaturales del pueblo",
@@ -124,7 +124,7 @@ export const characters: Character[] = [
       },
       psychology: {
         motivations:
-          "Marcus está impulsado por objetivos ocultos relacionados con los secretos más oscuros de MortiSabbat. Su motivación parece estar arraigada en eventos traumáticos de su pasado que lo han llevado a ver el pueblo como su dominio personal, donde él controla el flujo de información y el destino de quienes se atreven a investigar demasiado profundamente.",
+          "Marcus está impulsado por objetivos ocultos relacionados con los secretos más oscuros de Ravenshollow. Su motivación parece estar arraigada en eventos traumáticos de su pasado que lo han llevado a ver el pueblo como su dominio personal, donde él controla el flujo de información y el destino de quienes se atreven a investigar demasiado profundamente.",
         internalConflicts:
           "A pesar de su exterior carismático, Marcus lucha internamente con conflictos morales que ocasionalmente revelan destellos de humanidad. Hay momentos donde su máscara se desliza, mostrando a un hombre atormentado por decisiones pasadas y atrapado en un ciclo de comportamiento que ya no puede controlar completamente.",
         personalityTraits: {
@@ -136,13 +136,13 @@ export const characters: Character[] = [
       },
       history: {
         origins:
-          "Marcus ha estado involucrado en los eventos misteriosos de MortiSabbat desde mucho antes de la llegada de Elena. Ha vivido en el pueblo durante la mayor parte de su vida adulta, estableciendo conexiones con prácticamente todos los residentes y convirtiéndose en una figura central en la comunidad, aunque siempre desde las sombras.",
+          "Marcus ha estado involucrado en los eventos misteriosos de Ravenshollow desde mucho antes de la llegada de Elena. Ha vivido en el pueblo durante la mayor parte de su vida adulta, estableciendo conexiones con prácticamente todos los residentes y convirtiéndose en una figura central en la comunidad, aunque siempre desde las sombras.",
         definingTrauma:
           "Un evento traumático en su juventud, posiblemente relacionado con una pérdida personal devastadora, transformó a Marcus y moldeó su visión distorsionada del mundo. Este trauma lo llevó a desarrollar una filosofía nihilista que justifica sus acciones más oscuras como parte de un orden natural inevitable.",
-        connectionToMortiSabbat:
-          "Marcus tiene raíces profundas en MortiSabbat y conoce secretos ancestrales del lugar que se remontan a generaciones. Su familia ha estado conectada con los eventos sobrenaturales del pueblo durante décadas, y él ha heredado tanto el conocimiento como la responsabilidad de mantener ciertos secretos ocultos.",
+        connectionToRavenshollow:
+          "Marcus tiene raíces profundas en Ravenshollow y conoce secretos ancestrales del lugar que se remontan a generaciones. Su familia ha estado conectada con los eventos sobrenaturales del pueblo durante décadas, y él ha heredado tanto el conocimiento como la responsabilidad de mantener ciertos secretos ocultos.",
         hiddenSecrets:
-          "Marcus guarda secretos sobre la verdadera naturaleza de las desapariciones en MortiSabbat y su papel en ellas. También oculta una conexión personal con la hermana desaparecida de Elena, así como conocimiento sobre rituales antiguos que podrían estar relacionados con los eventos sobrenaturales del pueblo.",
+          "Marcus guarda secretos sobre la verdadera naturaleza de las desapariciones en Ravenshollow y su papel en ellas. También oculta una conexión personal con la hermana desaparecida de Elena, así como conocimiento sobre rituales antiguos que podrían estar relacionados con los eventos sobrenaturales del pueblo.",
       },
       relationships: {
         elena: {
@@ -171,11 +171,11 @@ export const characters: Character[] = [
     imageUrl: "/placeholder.svg?height=400&width=300",
     personality: ["Valiente", "Curiosa", "Leal", "Impulsiva"],
     backstory:
-      "Sarah ha estado investigando una red de desapariciones que se extiende por varios pueblos pequeños. Su llegada a MortiSabbat no es coincidencia, y pronto se convierte en la única persona en quien Elena puede confiar.",
+      "Sarah ha estado investigando una red de desapariciones que se extiende por varios pueblos pequeños. Su llegada a Ravenshollow no es coincidencia, y pronto se convierte en la única persona en quien Elena puede confiar.",
     detailedInfo: {
       overview: {
         generalDescription:
-          "Sarah Chen es una periodista investigativa independiente especializada en casos sin resolver y fenómenos inexplicables. Su llegada a MortiSabbat es el resultado de meses de investigación meticulosa que la ha llevado a descubrir patrones inquietantes en desapariciones que se extienden por varios estados.",
+          "Sarah Chen es una periodista investigativa independiente especializada en casos sin resolver y fenómenos inexplicables. Su llegada a Ravenshollow es el resultado de meses de investigación meticulosa que la ha llevado a descubrir patrones inquietantes en desapariciones que se extienden por varios estados.",
         roleInStory:
           "Como aliada principal de Elena, Sarah ofrece apoyo crucial en momentos de necesidad y aporta habilidades complementarias a la investigación. Su perspectiva externa y sus contactos en el mundo del periodismo proporcionan recursos valiosos, aunque su naturaleza impulsiva a veces pone en peligro tanto su seguridad como la de Elena.",
         keyCharacteristics: [
@@ -202,10 +202,10 @@ export const characters: Character[] = [
           "Sarah ha seguido una serie de desapariciones similares a través de varios pueblos pequeños durante los últimos tres años, estableciendo conexiones que las autoridades locales han pasado por alto. Su trabajo independiente la ha llevado a desarrollar teorías sobre una red más amplia de actividad criminal o sobrenatural.",
         definingTrauma:
           "Sarah perdió a su mejor amiga, Jessica, en circunstancias misteriosas durante su último año de universidad. Jessica desapareció después de investigar rumores sobre actividades extrañas en un pueblo rural, y su cuerpo nunca fue encontrado. Este evento transformó a Sarah de estudiante de comunicaciones en una periodista obsesionada con casos sin resolver.",
-        connectionToMortiSabbat:
-          "Las investigaciones de Sarah la llevaron a MortiSabbat cuando descubrió patrones inquietantes similares a otros casos en los que ha trabajado. Su llegada al pueblo coincide con la de Elena, pero Sarah ha estado rastreando estas conexiones durante mucho más tiempo y tiene información que podría ser crucial para resolver el misterio.",
+        connectionToRavenshollow:
+          "Las investigaciones de Sarah la llevaron a Ravenshollow cuando descubrió patrones inquietantes similares a otros casos en los que ha trabajado. Su llegada al pueblo coincide con la de Elena, pero Sarah ha estado rastreando estas conexiones durante mucho más tiempo y tiene información que podría ser crucial para resolver el misterio.",
         hiddenSecrets:
-          "Sarah oculta el hecho de que ha estado en contacto con un informante anónimo que le ha proporcionado información sobre MortiSabbat. También mantiene en secreto que ha encontrado evidencia de que las desapariciones podrían estar conectadas con una organización más grande, pero no está segura de en quién puede confiar con esta información.",
+          "Sarah oculta el hecho de que ha estado en contacto con un informante anónimo que le ha proporcionado información sobre Ravenshollow. También mantiene en secreto que ha encontrado evidencia de que las desapariciones podrían estar conectadas con una organización más grande, pero no está segura de en quién puede confiar con esta información.",
       },
       relationships: {
         elena: {
@@ -221,7 +221,7 @@ export const characters: Character[] = [
         "dr-hayes": {
           relationshipType: "Fuente de Información",
           description:
-            "Una relación de respeto mutuo y colaboración cautelosa. Sarah reconoce la experiencia del Dr. Hayes y su conocimiento del pueblo, pero también sospecha que él sabe más de lo que está dispuesto a revelar sobre los eventos misteriosos de MortiSabbat.",
+            "Una relación de respeto mutuo y colaboración cautelosa. Sarah reconoce la experiencia del Dr. Hayes y su conocimiento del pueblo, pero también sospecha que él sabe más de lo que está dispuesto a revelar sobre los eventos misteriosos de Ravenshollow.",
         },
       },
     },
@@ -234,11 +234,11 @@ export const characters: Character[] = [
     imageUrl: "/placeholder.svg?height=400&width=300",
     personality: ["Sabio", "Protector", "Misterioso", "Atormentado"],
     backstory:
-      "El Dr. Hayes ha sido el médico de MortiSabbat por más de 30 años. Ha visto cosas que no puede explicar y lleva el peso de secretos que podrían destruir el pueblo... o salvarlo.",
+      "El Dr. Hayes ha sido el médico de Ravenshollow por más de 30 años. Ha visto cosas que no puede explicar y lleva el peso de secretos que podrían destruir el pueblo... o salvarlo.",
     detailedInfo: {
       overview: {
         generalDescription:
-          "El Dr. Jonathan Hayes es una figura paternal en MortiSabbat, respetado por su dedicación médica y su conocimiento profundo de la historia del pueblo. Durante más de tres décadas, ha sido testigo de eventos que desafían la explicación racional, convirtiéndolo en un guardián reluctante de secretos que podrían cambiar la comprensión de la realidad misma.",
+          "El Dr. Jonathan Hayes es una figura paternal en Ravenshollow, respetado por su dedicación médica y su conocimiento profundo de la historia del pueblo. Durante más de tres décadas, ha sido testigo de eventos que desafían la explicación racional, convirtiéndolo en un guardián reluctante de secretos que podrían cambiar la comprensión de la realidad misma.",
         roleInStory:
           "Como mentor, el Dr. Hayes proporciona sabiduría y conocimiento esencial para avanzar en la investigación, aunque sus consejos a menudo vienen envueltos en advertencias crípticas. Su papel es complejo: quiere proteger tanto a Elena como al pueblo, pero debe equilibrar la revelación de verdades peligrosas con la preservación de vidas inocentes.",
         keyCharacteristics: [
@@ -262,13 +262,13 @@ export const characters: Character[] = [
       },
       history: {
         origins:
-          "El Dr. Hayes ha dedicado su vida a proteger a los habitantes de MortiSabbat, aunque esto ha significado ocultar verdades terribles y tomar decisiones que han pesado en su conciencia durante décadas. Llegó al pueblo como un joven médico idealista, pero los eventos que presenció lo transformaron en un guardián cauteloso de secretos peligrosos.",
+          "El Dr. Hayes ha dedicado su vida a proteger a los habitantes de Ravenshollow, aunque esto ha significado ocultar verdades terribles y tomar decisiones que han pesado en su conciencia durante décadas. Llegó al pueblo como un joven médico idealista, pero los eventos que presenció lo transformaron en un guardián cauteloso de secretos peligrosos.",
         definingTrauma:
-          "Un incidente catastrófico ocurrido hace 30 años en MortiSabbat cambió para siempre al Dr. Hayes. Durante este evento, se vio obligado a tomar decisiones que salvaron vidas pero también establecieron un patrón de encubrimiento que ha continuado hasta el presente. Las consecuencias de sus acciones durante esta crisis continúan atormentándolo.",
-        connectionToMortiSabbat:
-          "El Dr. Hayes ha sido el médico de MortiSabbat por más de 30 años, convirtiéndose en una institución en el pueblo. Su posición le ha dado acceso a información médica y personal sobre prácticamente todos los residentes, así como conocimiento de primera mano sobre eventos que otros han elegido olvidar.",
+          "Un incidente catastrófico ocurrido hace 30 años en Ravenshollow cambió para siempre al Dr. Hayes. Durante este evento, se vio obligado a tomar decisiones que salvaron vidas pero también establecieron un patrón de encubrimiento que ha continuado hasta el presente. Las consecuencias de sus acciones durante esta crisis continúan atormentándolo.",
+        connectionToRavenshollow:
+          "El Dr. Hayes ha sido el médico de Ravenshollow por más de 30 años, convirtiéndose en una institución en el pueblo. Su posición le ha dado acceso a información médica y personal sobre prácticamente todos los residentes, así como conocimiento de primera mano sobre eventos que otros han elegido olvidar.",
         hiddenSecrets:
-          "El Dr. Hayes guarda secretos sobre experimentos médicos no autorizados que se realizaron en el pueblo décadas atrás, así como conocimiento sobre la verdadera naturaleza de las desapariciones. También oculta su papel en el encubrimiento de eventos sobrenaturales y su conexión con organizaciones externas que han estado monitoreando MortiSabbat.",
+          "El Dr. Hayes guarda secretos sobre experimentos médicos no autorizados que se realizaron en el pueblo décadas atrás, así como conocimiento sobre la verdadera naturaleza de las desapariciones. También oculta su papel en el encubrimiento de eventos sobrenaturales y su conexión con organizaciones externas que han estado monitoreando Ravenshollow.",
       },
       relationships: {
         elena: {

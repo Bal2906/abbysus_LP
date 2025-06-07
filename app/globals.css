@@ -32,7 +32,7 @@
     @apply border-border;
   }
   body {
-    @apply bg-dark-void text-ghost-white font-sans;
+    @apply bg-dark-void text-ghost-white font-modern;
     background-image: radial-gradient(circle at 20% 80%, rgba(220, 20, 60, 0.1) 0%, transparent 50%),
       radial-gradient(circle at 80% 20%, rgba(48, 25, 52, 0.1) 0%, transparent 50%);
   }
@@ -199,6 +199,27 @@
 
   .prose-crimson p {
     @apply leading-relaxed mb-4 text-gray-300;
+  }
+
+  /* Botones con alto impacto visual */
+  .bg-size-200 {
+    background-size: 200% auto;
+  }
+
+  .bg-pos-0 {
+    background-position: 0% center;
+  }
+
+  .bg-pos-100 {
+    background-position: 100% center;
+  }
+
+  /* Efectos adicionales para botones */
+  .line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
   }
 }
 

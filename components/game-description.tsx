@@ -91,7 +91,7 @@ export function GameDescription() {
             viewport={{ once: true }}
             className="text-2xl text-gray-300 max-w-4xl mx-auto leading-relaxed font-elegant italic"
           >
-            "En MortiSabbat, la línea entre la realidad y la pesadilla se desvanece. Como Elena Blackwood, deberás
+            "En Ravenshollow, la línea entre la realidad y la pesadilla se desvanece. Como Elena Blackwood, deberás
             navegar por un laberinto de secretos donde cada decisión puede ser tu salvación... o tu condena."
           </motion.p>
         </motion.div>
@@ -151,7 +151,7 @@ export function GameDescription() {
               </p>
               <p className="text-gray-300 text-lg leading-relaxed">
                 ¿Puedes confiar en lo que ves? ¿O tu mente fragmentada te está mostrando una realidad distorsionada? En
-                MortiSabbat, el verdadero enemigo podría estar dentro de ti.
+                Ravenshollow, el verdadero enemigo podría estar dentro de ti.
               </p>
             </div>
 

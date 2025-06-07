@@ -2,9 +2,9 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'MortiSabbat',
-  description: 'Created with Next.js',
-  generator: 'Next.js',
+  title: 'MortiSabbat - Visual Novel',
+  description: 'MortiSabbat - Visual Novel',
+  generator: 'MortiSabbat',
 }
 
 export default function RootLayout({
