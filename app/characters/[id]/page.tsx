@@ -246,7 +246,7 @@ export default function CharacterPage() {
                                         className="w-full h-full"
                                     >
                                         <img
-                                            src={character.imageUrl || "/placeholder.svg"}
+                                            src={character.imageAvatar || "/placeholder.svg"}
                                             alt={character.name}
                                             className="w-full h-full object-cover"
                                         />
@@ -588,9 +588,9 @@ export default function CharacterPage() {
                                                             <div className="flex items-center">
                                                                 <div className="w-16 h-16 lg:w-20 lg:h-20 xl:w-24 xl:h-24 overflow-hidden flex-shrink-0">
                                                                     <img
-                                                                        src={otherChar.imageUrl || "/placeholder.svg"}
+                                                                        src={otherChar.imageAvatar || "/placeholder.svg"}
                                                                         alt={otherChar.name}
-                                                                        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                                                                        className="w-full h-full object-cover rounded-full transition-transform duration-500"
                                                                     />
                                                                 </div>
 

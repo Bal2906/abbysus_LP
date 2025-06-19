@@ -208,7 +208,7 @@ export function PreloaderPage({ onLoadComplete }: PreloaderPageProps) {
               <motion.div
                 animate={{ rotate: 360 }}
                 transition={{ duration: 30, repeat: Number.POSITIVE_INFINITY, ease: "linear" }}
-                className="absolute inset-0 border border-crimson/20 rounded-lg"
+                className="absolute inset-0 border border-transparent rounded-lg"
               />
 
               {/* Segundo borde animado */}
@@ -221,7 +221,7 @@ export function PreloaderPage({ onLoadComplete }: PreloaderPageProps) {
 
               {/* Letra R central */}
               <div className="absolute inset-0 flex items-center justify-center text-white/80 font-elegant text-4xl font-bold">
-                R
+                MS
               </div>
             </div>
 
@@ -252,7 +252,8 @@ export function PreloaderPage({ onLoadComplete }: PreloaderPageProps) {
             }}
             className="text-4xl sm:text-5xl md:text-6xl font-elegant font-bold mb-10 text-crimson relative z-10 tracking-wider"
           >
-            Ravenshollow
+            <span className="text-white">
+                <span className="text-crimson">B</span>ienvenido</span>
           </motion.h1>
 
           {/* Loading Messages con transiciones elegantes */}

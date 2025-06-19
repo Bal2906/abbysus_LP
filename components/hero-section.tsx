@@ -113,7 +113,10 @@ export function HeroSection() {
             className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-elegant font-bold mb-6 sm:mb-8 relative"
           >
             <span className="relative inline-block">
-              <span className="text-crimson">Mortis Sabbat</span>
+              <span className="text-white">
+                <span className="text-crimson">M</span>orti <span className="text-crimson">S</span>abbat
+              </span>
+
               <motion.div
                 className="absolute inset-0 text-crimson opacity-20"
                 animate={{
@@ -126,7 +129,9 @@ export function HeroSection() {
                   repeatDelay: 5,
                 }}
               >
-                Mortis Sabbat
+                <span className="text-white">
+                  <span className="text-crimson">M</span>orti <span className="text-crimson">S</span>abbat
+                </span>
               </motion.div>
             </span>
           </motion.h1>

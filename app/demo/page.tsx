@@ -9,6 +9,19 @@ export default function DemoPage() {
   const [isLoading, setIsLoading] = useState(true)
   const isMobile = useMediaQuery("(max-width: 768px)")
 
+        // Función para renderizar el título con colores específicos
+        const renderTitle = () => {
+          const title = "Morti Sabbat"
+          return title.split("").map((char, index) => {
+            const isMS = char === "M" || char === "S"
+            return (
+              <span key={index} className={isMS ? "text-crimson" : "text-white"}>
+                {char}
+              </span>
+            )
+          })
+        }
+
   useEffect(() => {
     // Simular carga del juego
     const timer = setTimeout(() => {
@@ -70,11 +83,10 @@ export default function DemoPage() {
                 }}
                 className="w-16 h-16 mx-auto mb-6 bg-gradient-to-r from-crimson to-deep-purple rounded-lg flex items-center justify-center"
               >
-                <span className="text-white font-elegant text-2xl font-bold">R</span>
+                <span className="text-white font-elegant text-2xl font-bold">MS</span>
               </motion.div>
 
-              <h1 className="text-3xl md:text-4xl font-elegant font-bold text-crimson mb-4">Mortis Sabbat</h1>
-
+              <h1 className="text-3xl md:text-4xl font-elegant font-bold tracking-wide text-center mb-4">{renderTitle()}</h1>
               <motion.p
                 animate={{ opacity: [0.5, 1, 0.5] }}
                 transition={{ duration: 1.5, repeat: Number.POSITIVE_INFINITY }}

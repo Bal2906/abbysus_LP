@@ -8,8 +8,9 @@ export type MenuState =
   | "loadSlots"
   | "pause"
   | "credits"
+  | "gameEndTitle"
+  | "gameResults"
   | "imageViewer"
-  | "gameEnd"
 
 export type ConfirmationType = "newGame" | "loadGame" | "exit" | "saveGame" | "overwriteSave" | null
 export type LoadingType = "newGame" | "loadGame" | "saveGame" | null

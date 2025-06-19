@@ -8,21 +8,21 @@ interface GameEndScreenProps {
   onContinue: () => void
   onMainMenu: () => void
   onRestart: () => void
-  endingType?: "good" | "bad" | "neutral"
-  playerChoices?: number
-  completionTime?: string
+  stats: {
+    endingType: "good" | "bad" | "neutral"
+    playerChoices: number
+    completionTime: string
+  }
 }
 
 export function GameEndScreen({
   onContinue,
   onMainMenu,
   onRestart,
-  endingType = "neutral",
-  playerChoices = 0,
-  completionTime = "45:30",
+  stats,
 }: GameEndScreenProps) {
   const getEndingData = () => {
-    switch (endingType) {
+    switch (stats.endingType) {
       case "good":
         return {
           title: "Final Esperanzador",
@@ -36,7 +36,7 @@ export function GameEndScreen({
         return {
           title: "Final Siniestro",
           subtitle: "La oscuridad ha prevalecido",
-          description: "Las sombras de Ravenshollow han reclamado otra alma perdida.",
+          description: "Las sombras de Morti Sabbat han reclamado otra alma perdida.",
           color: "#DC143C",
           icon: Heart,
           particles: "🔥",
@@ -175,7 +175,7 @@ export function GameEndScreen({
               <Heart className="h-6 w-6 text-crimson mr-2" />
               <span className="text-crimson font-elegant font-bold">Decisiones</span>
             </div>
-            <p className="text-white text-lg font-elegant">{playerChoices} elecciones</p>
+            <p className="text-white text-lg font-elegant">{stats.playerChoices} elecciones</p>
           </div>
 
           <div className="glass-effect p-4 rounded-xl border border-crimson/20">
@@ -183,7 +183,7 @@ export function GameEndScreen({
               <Star className="h-6 w-6 text-crimson mr-2" />
               <span className="text-crimson font-elegant font-bold">Tiempo</span>
             </div>
-            <p className="text-white text-lg font-elegant">{completionTime}</p>
+            <p className="text-white text-lg font-elegant">{stats.completionTime}</p>
           </div>
         </motion.div>
 
@@ -217,7 +217,7 @@ export function GameEndScreen({
           className="mt-8"
         >
           <p className="text-gray-400 font-elegant italic text-sm">
-            "Cada final es un nuevo comienzo en las sombras de Ravenshollow..."
+            "Cada final es un nuevo comienzo en las sombras de Morti Sabbat..."
           </p>
         </motion.div>
       </div>

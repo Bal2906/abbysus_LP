@@ -238,7 +238,7 @@ export function CharactersSection() {
               }`}
             >
               <img
-                src={character.imageUrl || "/placeholder.svg"}
+                src={character.imageCover || "/placeholder.svg"}
                 alt={character.name}
                 className="w-full h-32 object-cover"
               />

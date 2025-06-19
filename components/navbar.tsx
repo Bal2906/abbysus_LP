@@ -78,6 +78,18 @@ export function Navbar({ isCharacterPage = false }: NavbarProps) {
     }
   }
 
+  // Function to render the title with specific colors for M and S
+  const renderNavbarTitle = (text: string) => {
+    return text.split("").map((letter, index) => {
+      const isSpecialLetter = letter.toLowerCase() === "m" || letter.toLowerCase() === "s"
+      return (
+        <span key={index} className={isSpecialLetter ? "text-crimson" : "text-white"}>
+          {letter}
+        </span>
+      )
+    })
+  }
+
   return (
     <>
       {/* Desktop/Mobile Header */}
@@ -93,11 +105,22 @@ export function Navbar({ isCharacterPage = false }: NavbarProps) {
             {/* Logo */}
             <motion.div
               whileHover={{ scale: 1.05 }}
-              className="flex items-center space-x-2 cursor-pointer"
+              className="flex items-center space-x-3 cursor-pointer"
               onClick={handleLogoClick}
             >
-              <div className="w-8 h-8 bg-gradient-to-br from-crimson to-deep-purple rounded-lg"></div>
-              <span className="text-xl font-elegant font-bold text-crimson">Mortis Sabbat</span>
+              {/* Logo MS */}
+              <div className="relative">
+                <div className="w-10 h-10 bg-gradient-to-br from-crimson to-deep-purple rounded-lg flex items-center justify-center">
+                  <span className="text-white font-bold text-lg font-elegant">MS</span>
+                </div>
+                {/* Subtle glow effect */}
+                <div className="absolute inset-0 w-10 h-10 bg-gradient-to-br from-crimson to-deep-purple rounded-lg opacity-50 blur-sm -z-10"></div>
+              </div>
+
+              {/* Title */}
+              <span className="text-xl font-bold font-elegant tracking-wide">
+                {renderNavbarTitle("Morti Sabbat")}
+              </span>
             </motion.div>
 
             {/* Right Navigation */}
@@ -158,9 +181,20 @@ export function Navbar({ isCharacterPage = false }: NavbarProps) {
             >
               {/* Sidebar Header */}
               <div className="flex items-center justify-between p-6 border-b border-crimson/30">
-                <div className="flex items-center space-x-2 cursor-pointer" onClick={handleLogoClick}>
-                  <div className="w-8 h-8 bg-gradient-to-br from-crimson to-deep-purple rounded-lg"></div>
-                  <span className="text-xl font-elegant font-bold text-crimson">Mortis Sabbat</span>
+                <div className="flex items-center space-x-3 cursor-pointer" onClick={handleLogoClick}>
+                  {/* Logo MS */}
+                  <div className="relative">
+                    <div className="w-10 h-10 bg-gradient-to-br from-crimson to-deep-purple rounded-lg flex items-center justify-center">
+                      <span className="text-white font-bold text-lg font-elegant">MS</span>
+                    </div>
+                    {/* Subtle glow effect */}
+                    <div className="absolute inset-0 w-10 h-10 bg-gradient-to-br from-crimson to-deep-purple rounded-lg opacity-50 blur-sm -z-10"></div>
+                  </div>
+
+                  {/* Title */}
+                  <span className="text-xl font-bold font-elegant tracking-wide">
+                    {renderNavbarTitle("Morti Sabbat")}
+                  </span>
                 </div>
                 <Button
                   variant="ghost"

@@ -4,7 +4,7 @@ import { useState, useEffect, useRef } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import { Save, Pause, Eye, Heart, ChevronRight } from "lucide-react"
 import { ImpactButton } from "./impact-button"
-import { getCharacterById, getSceneById, getNextDialogue, hasChoices } from "@/data/gameDemo"
+import { getCharacterById, getSceneById, getNextDialogue, hasChoices, emotionIcons } from "@/data/gameDemo"
 import type { NarrativeState, MenuState } from "./types"
 
 interface NarrativeEngineProps {
@@ -120,10 +120,12 @@ export function NarrativeEngine({ narrativeState, setNarrativeState, setCurrentM
             showChoices: false,
           }))
         } else {
-          setCurrentMenu("gameEnd")
+          // Cambiar aquí para ir a la pantalla de fin del juego
+          setCurrentMenu("gameEndTitle")
         }
       } else {
-        setCurrentMenu("gameEnd")
+        // Cambiar aquí para ir a la pantalla de fin del juego
+        setCurrentMenu("gameEndTitle")
       }
     }
   }
@@ -389,26 +391,16 @@ export function NarrativeEngine({ narrativeState, setNarrativeState, setCurrentM
                           transition={{ delay: 0.2 }}
                           className="flex items-center space-x-2 mt-1"
                         >
-                          <div className="flex items-center space-x-1">
-                            {currentDialogue?.emotion === "angry" && (
-                              <span className="text-red-400 text-xs font-elegant">💢 Enojado</span>
-                            )}
-                            {currentDialogue?.emotion === "sad" && (
-                              <span className="text-blue-400 text-xs font-elegant">💧 Triste</span>
-                            )}
-                            {currentDialogue?.emotion === "fear" && (
-                              <span className="text-purple-400 text-xs font-elegant">😰 Temeroso</span>
-                            )}
-                            {currentDialogue?.emotion === "happy" && (
-                              <span className="text-yellow-400 text-xs font-elegant">✨ Feliz</span>
-                            )}
-                            {currentDialogue?.emotion === "surprise" && (
-                              <span className="text-orange-400 text-xs font-elegant">❗ Sorprendido</span>
-                            )}
-                            {(!currentDialogue?.emotion || currentDialogue?.emotion === "normal") && (
-                              <span className="text-gray-400 text-xs font-elegant">💭 Pensativo</span>
-                            )}
-                          </div>
+                          {(() => {
+                            const emotion = currentDialogue?.emotion ?? "normal"
+                            const { icon, label, color } = emotionIcons[emotion] ?? emotionIcons["normal"]
+
+                            return (
+                              <span className={`${color} text-xs font-elegant`}>
+                                {icon} {label}
+                              </span>
+                            )
+                          })()}
                         </motion.div>
                       </div>
                     </div>

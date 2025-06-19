@@ -26,7 +26,7 @@ export function GameDescription() {
       icon: Eye,
       title: "Narrativa Ramificada Compleja",
       description:
-        "15+ finales únicos determinados por un sistema de decisiones profundo que rastrea cada elección moral y psicológica.",
+        "4+ finales únicos determinados por un sistema de decisiones profundo que rastrea cada elección moral y psicológica.",
       color: "from-deep-purple to-midnight",
     },
     {
@@ -48,7 +48,7 @@ export function GameDescription() {
   const stats = [
     { icon: Clock, value: "8-12", label: "Horas de Juego", desc: "Experiencia completa" },
     { icon: Users, value: "6", label: "Personajes Únicos", desc: "Cada uno con secretos" },
-    { icon: Gamepad2, value: "15+", label: "Finales Diferentes", desc: "Basados en tus decisiones" },
+    { icon: Gamepad2, value: "4+", label: "Finales Diferentes", desc: "Basados en tus decisiones" },
     { icon: Award, value: "100+", label: "Decisiones Críticas", desc: "Que alteran la historia" },
   ]
 
@@ -91,7 +91,7 @@ export function GameDescription() {
             viewport={{ once: true }}
             className="text-2xl text-gray-300 max-w-4xl mx-auto leading-relaxed font-elegant italic"
           >
-            "En Ravenshollow, la línea entre la realidad y la pesadilla se desvanece. Como Elena Blackwood, deberás
+            "En Morti Sabbat, la línea entre la realidad y la pesadilla se desvanece. Como Elena Blackwood, deberás
             navegar por un laberinto de secretos donde cada decisión puede ser tu salvación... o tu condena."
           </motion.p>
         </motion.div>
@@ -107,7 +107,7 @@ export function GameDescription() {
           >
             <div className="relative overflow-hidden rounded-2xl">
               <img
-                src="/placeholder.svg?height=500&width=700"
+                src="https://res.cloudinary.com/dismyuce7/image/upload/f_auto,q_auto/v1750298118/assets-MortiSabbat/wallpaper/assets-MortiSabbat/wallpaper/banner.png"
                 alt="Gameplay Screenshot"
                 className="w-full h-96 object-cover"
               />
@@ -151,7 +151,7 @@ export function GameDescription() {
               </p>
               <p className="text-gray-300 text-lg leading-relaxed">
                 ¿Puedes confiar en lo que ves? ¿O tu mente fragmentada te está mostrando una realidad distorsionada? En
-                Ravenshollow, el verdadero enemigo podría estar dentro de ti.
+                Morti Sabbat, el verdadero enemigo podría estar dentro de ti.
               </p>
             </div>
 
@@ -226,7 +226,7 @@ export function GameDescription() {
           <div className="glass-effect p-8 rounded-2xl max-w-2xl mx-auto">
             <h3 className="text-3xl font-elegant font-bold text-gradient mb-4">¿Estás Preparado para la Verdad?</h3>
             <p className="text-gray-300 mb-6">
-              Descarga la demo y experimenta los primeros momentos de terror que definirán tu destino.
+              Prueba la demo y experimenta los primeros momentos de terror que definirán tu destino.
             </p>
             <motion.button
               whileHover={{ scale: 1.05 }}
